@@ -1,21 +1,19 @@
-h1 {
-    text-align: center;
-}
-
-body{
-     
+.titulo-principal {
+    padding-left: 30px;
 }
 
 #banner{
     width: 100%;
+    margin-top: -20px;
 }
 
 .principal{
     background: #898989;
     padding: 20px;
+    
 }
 
-h2 {
+.titulo-centralizado{
     text-align: center;
 }
 
@@ -36,7 +34,7 @@ em strong{
     padding: 30px;
 }
 
-h3 {
+.titulo-centralizado {
     text-align: center;
 }
 
@@ -49,6 +47,7 @@ ul {
     vertical-align: top;
     width: 20%;
     margin-right: 15%;
+    
 }
 
 .imgeDiferenciales {
