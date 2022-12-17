@@ -14,7 +14,7 @@
     <body>
         <header>
           <div class="caja">
-              <h1><img src="imagenes/logo.png"></h1>
+              <h1><img src="imagenes/logo.png" alt="logo de baberia"></h1>
               <nav>
                     <ul> 
                        <li><a href ="index.html">Home</a></li>
@@ -29,49 +29,75 @@
         <main>
             <form>
                  <label for="nombreyapellido">Nombre y Apellido</label>
-                 <input type="text" id="nombreyapellido" class="input-padron">
+                 <input type="text" id="nombreyapellido" class="input-padron" required>
 
                  <label for="correoelectronico">Correo Electronico</label>
-                 <input type="text" id="correoelectronico" class="input-padron">
+                 <input type="email" id="correoelectronico" class="input-padron" required placeholder="coreo@dominio.com">
 
                  <label for="telefono">Telefono</label>
-                 <input type="text" id="telefono" class="input-padron">
+                 <input type="tel" id="telefono" class="input-padron" required placeholder="(+569) XXXX XXXX">
 
                  <label for="mensaje">Mensaje</label>
                  <textarea cols="70" rows="10" 
-                 id="mensaje"></textarea>
+                 id="mensaje"></textarea required>
 
-                <div>
+                    <fieldset>
 
-                    <p>¿Como te gustaria ser contactado?</p>
+                     <legend>¿Como te gustaria ser contactado?</legend>
                  
-                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Correo Electronico</label>
+                     <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Correo Electronico</label>
    
-                    <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Telefono/Celular</label>
+                     <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Telefono/Celular</label>
    
-                    <label for="radio-wsp"><input type="radio" name="contacto" value="wsp" id="radio-wsp">WhatsApp</label>
+                     <label for="radio-wsp"><input type="radio" name="contacto" value="wsp" id="radio-wsp" checked>WhatsApp</label>
    
-                </div>
+                    </fieldset>
 
-                <div>
+                    <fieldset>
 
-                 <p>¿En que horario te gustaria ser atendido?</p>
-                 <select>
-                    <option>Mañana</option>
-                    <option>Tarde</option>
-                    <option>Noche</option>
-                 </select>
+                     <legend>¿En que horario te gustaria ser atendido?</legend>
+                     <select>
+                        <option>Mañana</option>
+                     <option>Tarde</option>
+                     <option>Noche</option>
+                     </select>
 
-                 <label class="checkbox"><input type="checkbox">¿Le gustaria recibir novendades de nuestra Barberia?
+                     <label class="checkbox"><input type="checkbox" checked>¿Le gustaria recibir novendades de nuestra Barberia?
 
-                 <input type="submit" value="Enviar Formulario">
+                     <input type="submit" value="Enviar Formulario" class="enviar">
                  
-                </div>
+                    </fieldset>
+            </form>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Horarios</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> Lunes </td>
+                        <td> 08hrs ~ 20hrs </td>
+                    </tr> 
+                    <tr>
+                        <td> Miercoles </td>
+                        <td> 08hrs ~ 20hrs </td>
+                    </tr> 
+                    <tr>
+                        <td> Viernes </td>
+                        <td> 08hrs ~ 20hrs </td>
+                    </tr>
+                </tbody>
+
+            </table>
+
         </main>
 
         <footer>
-            <img src="imagenes/logo-blanco.png">
-            <p class="copyright"> &copy Copyright Barberia Alura - 2020 - 2022</p>
+            <img src="imagenes/logo-blanco.png" alt="logo de baberia">
+            <p class="copyright">&copy Copyright Barberia Alura - 2020 - 2022</p>
         </footer>
     </body>
 
